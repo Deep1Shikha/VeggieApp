@@ -7,6 +7,7 @@ const addRecipe = (recipe,id) => {
     let html=`
     <li data-id="${id}">
     <div>${recipe.title}</div>
+    <div>${recipe.author}</div>
     <div>${time}</div>
     <button>Delete</button>
     </li>
@@ -52,6 +53,7 @@ form.addEventListener('submit', event => {
 
     const recipe_input ={
         title : form.recipe.value, //gets the value from input box
+        author: form.fname.value,
         created_at : firebase.firestore.Timestamp.fromDate(now) //creates timestamp object based on date
     };
 

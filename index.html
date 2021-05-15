@@ -29,19 +29,25 @@
   </div> -->
 
   <div class="container">
+    <div class="top">
     <h2 class="title">Recipe</h2>
-    <ul></ul>
-    
     <form class="form">
-      <label for="recipe">Add New Recipe :</label>
+      
       <div class="input-grp">
-      <input type="text" id="recipe" required></input>
+        <label for="recipe">Add New Recipe :</label>
+      <input type="text" id="recipe" required placeholder="recipe"></input>
+      
+      <input type="text" id="fname" name="fname" placeholder="Prepared By">
       <div class="submitContainer">
         <input class="enter" type="submit" value="Add">
       </div>
     </div>
       </form>
-    </form>
+  </div>
+    <div class=listing>
+    <ul></ul>
+  </div>
+ 
   </div>
 
   <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
