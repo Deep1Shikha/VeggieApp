@@ -60,6 +60,8 @@ form.addEventListener('submit', event => {
     db.collection('recipes').add(recipe_input)
     .then(()=>{console.log('recipe added')})
     .catch((err)=>{console.log(err)})
+
+    form.reset();
 })
 
 
